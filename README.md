@@ -1,2 +1,2 @@
 # BFT
-战绩追踪
+https://liuziangexit.com/BFT
