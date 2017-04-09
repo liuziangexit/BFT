@@ -32,38 +32,38 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.更多ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.软件更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.IDLab = new System.Windows.Forms.Label();
-            this.DogtagPic = new System.Windows.Forms.PictureBox();
-            this.RankPic = new System.Windows.Forms.PictureBox();
-            this.DogtagbackPic = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.SPMLab = new System.Windows.Forms.Label();
-            this.KPMLab = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.WinsLab = new System.Windows.Forms.Label();
-            this.TimeLab = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.KillsLab = new System.Windows.Forms.Label();
             this.DeathLab = new System.Windows.Forms.Label();
+            this.KillsLab = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.TimeLab = new System.Windows.Forms.Label();
+            this.WinsLab = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.KPMLab = new System.Windows.Forms.Label();
+            this.SPMLab = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.DogtagbackPic = new System.Windows.Forms.PictureBox();
+            this.RankPic = new System.Windows.Forms.PictureBox();
+            this.DogtagPic = new System.Windows.Forms.PictureBox();
+            this.IDLab = new System.Windows.Forms.Label();
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.statusBar = new System.Windows.Forms.StatusStrip();
+            this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
             this.menuStrip1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RankPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagbackPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RankPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).BeginInit();
             this.MainTabControl.SuspendLayout();
             this.statusBar.SuspendLayout();
             this.SuspendLayout();
@@ -82,36 +82,37 @@
             // 查询ToolStripMenuItem
             // 
             this.查询ToolStripMenuItem.Name = "查询ToolStripMenuItem";
+            this.查询ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F1;
             this.查询ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.查询ToolStripMenuItem.Text = "查询";
+            this.查询ToolStripMenuItem.Click += new System.EventHandler(this.查询ToolStripMenuItem_Click);
             // 
             // 更多ToolStripMenuItem
             // 
             this.更多ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.设置ToolStripMenuItem,
+            this.软件更新ToolStripMenuItem,
             this.帮助ToolStripMenuItem,
             this.关于ToolStripMenuItem});
             this.更多ToolStripMenuItem.Name = "更多ToolStripMenuItem";
             this.更多ToolStripMenuItem.Size = new System.Drawing.Size(44, 21);
             this.更多ToolStripMenuItem.Text = "更多";
             // 
-            // 设置ToolStripMenuItem
+            // 软件更新ToolStripMenuItem
             // 
-            this.设置ToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("设置ToolStripMenuItem.Image")));
-            this.设置ToolStripMenuItem.Name = "设置ToolStripMenuItem";
-            this.设置ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            this.设置ToolStripMenuItem.Text = "设置";
+            this.软件更新ToolStripMenuItem.Name = "软件更新ToolStripMenuItem";
+            this.软件更新ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.软件更新ToolStripMenuItem.Text = "软件更新";
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.帮助ToolStripMenuItem.Text = "帮助";
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             // 
             // tabPage4
@@ -178,6 +179,161 @@
             this.tabPage1.Text = "总览";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // DeathLab
+            // 
+            this.DeathLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.DeathLab.ForeColor = System.Drawing.Color.White;
+            this.DeathLab.Location = new System.Drawing.Point(406, 350);
+            this.DeathLab.Name = "DeathLab";
+            this.DeathLab.Size = new System.Drawing.Size(139, 41);
+            this.DeathLab.TabIndex = 33;
+            this.DeathLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // KillsLab
+            // 
+            this.KillsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.KillsLab.ForeColor = System.Drawing.Color.White;
+            this.KillsLab.Location = new System.Drawing.Point(406, 216);
+            this.KillsLab.Name = "KillsLab";
+            this.KillsLab.Size = new System.Drawing.Size(139, 41);
+            this.KillsLab.TabIndex = 32;
+            this.KillsLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(407, 314);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(138, 27);
+            this.label11.TabIndex = 31;
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(408, 189);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(138, 27);
+            this.label12.TabIndex = 30;
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TimeLab
+            // 
+            this.TimeLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.TimeLab.ForeColor = System.Drawing.Color.White;
+            this.TimeLab.Location = new System.Drawing.Point(237, 350);
+            this.TimeLab.Name = "TimeLab";
+            this.TimeLab.Size = new System.Drawing.Size(139, 41);
+            this.TimeLab.TabIndex = 29;
+            this.TimeLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // WinsLab
+            // 
+            this.WinsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.WinsLab.ForeColor = System.Drawing.Color.White;
+            this.WinsLab.Location = new System.Drawing.Point(237, 216);
+            this.WinsLab.Name = "WinsLab";
+            this.WinsLab.Size = new System.Drawing.Size(139, 41);
+            this.WinsLab.TabIndex = 28;
+            this.WinsLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(238, 314);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 27);
+            this.label5.TabIndex = 27;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(253, 189);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(110, 27);
+            this.label6.TabIndex = 26;
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // KPMLab
+            // 
+            this.KPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.KPMLab.ForeColor = System.Drawing.Color.White;
+            this.KPMLab.Location = new System.Drawing.Point(67, 350);
+            this.KPMLab.Name = "KPMLab";
+            this.KPMLab.Size = new System.Drawing.Size(139, 41);
+            this.KPMLab.TabIndex = 25;
+            this.KPMLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // SPMLab
+            // 
+            this.SPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.SPMLab.ForeColor = System.Drawing.Color.White;
+            this.SPMLab.Location = new System.Drawing.Point(67, 216);
+            this.SPMLab.Name = "SPMLab";
+            this.SPMLab.Size = new System.Drawing.Size(139, 41);
+            this.SPMLab.TabIndex = 24;
+            this.SPMLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(68, 314);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(138, 27);
+            this.label4.TabIndex = 23;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(69, 189);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 27);
+            this.label1.TabIndex = 22;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DogtagbackPic
+            // 
+            this.DogtagbackPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DogtagbackPic.ErrorImage = null;
+            this.DogtagbackPic.InitialImage = null;
+            this.DogtagbackPic.Location = new System.Drawing.Point(369, 46);
+            this.DogtagbackPic.Name = "DogtagbackPic";
+            this.DogtagbackPic.Size = new System.Drawing.Size(110, 110);
+            this.DogtagbackPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DogtagbackPic.TabIndex = 3;
+            this.DogtagbackPic.TabStop = false;
+            // 
+            // RankPic
+            // 
+            this.RankPic.ErrorImage = null;
+            this.RankPic.InitialImage = null;
+            this.RankPic.Location = new System.Drawing.Point(253, 46);
+            this.RankPic.Name = "RankPic";
+            this.RankPic.Size = new System.Drawing.Size(110, 110);
+            this.RankPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RankPic.TabIndex = 2;
+            this.RankPic.TabStop = false;
+            // 
+            // DogtagPic
+            // 
+            this.DogtagPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DogtagPic.ErrorImage = null;
+            this.DogtagPic.InitialImage = null;
+            this.DogtagPic.Location = new System.Drawing.Point(137, 46);
+            this.DogtagPic.Name = "DogtagPic";
+            this.DogtagPic.Size = new System.Drawing.Size(110, 110);
+            this.DogtagPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.DogtagPic.TabIndex = 1;
+            this.DogtagPic.TabStop = false;
+            // 
             // IDLab
             // 
             this.IDLab.Dock = System.Windows.Forms.DockStyle.Top;
@@ -188,168 +344,6 @@
             this.IDLab.Size = new System.Drawing.Size(611, 40);
             this.IDLab.TabIndex = 0;
             this.IDLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DogtagPic
-            // 
-            this.DogtagPic.ErrorImage = null;
-            this.DogtagPic.InitialImage = null;
-            this.DogtagPic.Location = new System.Drawing.Point(135, 46);
-            this.DogtagPic.Name = "DogtagPic";
-            this.DogtagPic.Size = new System.Drawing.Size(110, 110);
-            this.DogtagPic.TabIndex = 1;
-            this.DogtagPic.TabStop = false;
-            // 
-            // RankPic
-            // 
-            this.RankPic.ErrorImage = null;
-            this.RankPic.InitialImage = null;
-            this.RankPic.Location = new System.Drawing.Point(251, 46);
-            this.RankPic.Name = "RankPic";
-            this.RankPic.Size = new System.Drawing.Size(110, 110);
-            this.RankPic.TabIndex = 2;
-            this.RankPic.TabStop = false;
-            // 
-            // DogtagbackPic
-            // 
-            this.DogtagbackPic.ErrorImage = null;
-            this.DogtagbackPic.InitialImage = null;
-            this.DogtagbackPic.Location = new System.Drawing.Point(367, 46);
-            this.DogtagbackPic.Name = "DogtagbackPic";
-            this.DogtagbackPic.Size = new System.Drawing.Size(110, 110);
-            this.DogtagbackPic.TabIndex = 3;
-            this.DogtagbackPic.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(67, 189);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 27);
-            this.label1.TabIndex = 22;
-            this.label1.Text = "每分钟得分";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Visible = false;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(66, 314);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(138, 27);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "每分钟击杀数";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Visible = false;
-            // 
-            // SPMLab
-            // 
-            this.SPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.SPMLab.ForeColor = System.Drawing.Color.White;
-            this.SPMLab.Location = new System.Drawing.Point(65, 216);
-            this.SPMLab.Name = "SPMLab";
-            this.SPMLab.Size = new System.Drawing.Size(139, 41);
-            this.SPMLab.TabIndex = 24;
-            this.SPMLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // KPMLab
-            // 
-            this.KPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.KPMLab.ForeColor = System.Drawing.Color.White;
-            this.KPMLab.Location = new System.Drawing.Point(65, 350);
-            this.KPMLab.Name = "KPMLab";
-            this.KPMLab.Size = new System.Drawing.Size(139, 41);
-            this.KPMLab.TabIndex = 25;
-            this.KPMLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(251, 189);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(110, 27);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "胜率";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label6.Visible = false;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(236, 314);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 27);
-            this.label5.TabIndex = 27;
-            this.label5.Text = "游戏时间";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label5.Visible = false;
-            // 
-            // WinsLab
-            // 
-            this.WinsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.WinsLab.ForeColor = System.Drawing.Color.White;
-            this.WinsLab.Location = new System.Drawing.Point(235, 216);
-            this.WinsLab.Name = "WinsLab";
-            this.WinsLab.Size = new System.Drawing.Size(139, 41);
-            this.WinsLab.TabIndex = 28;
-            this.WinsLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TimeLab
-            // 
-            this.TimeLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.TimeLab.ForeColor = System.Drawing.Color.White;
-            this.TimeLab.Location = new System.Drawing.Point(235, 350);
-            this.TimeLab.Name = "TimeLab";
-            this.TimeLab.Size = new System.Drawing.Size(139, 41);
-            this.TimeLab.TabIndex = 29;
-            this.TimeLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(406, 189);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(138, 27);
-            this.label12.TabIndex = 30;
-            this.label12.Text = "击杀数";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label12.Visible = false;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(405, 314);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(138, 27);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "死亡数";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label11.Visible = false;
-            // 
-            // KillsLab
-            // 
-            this.KillsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.KillsLab.ForeColor = System.Drawing.Color.White;
-            this.KillsLab.Location = new System.Drawing.Point(404, 216);
-            this.KillsLab.Name = "KillsLab";
-            this.KillsLab.Size = new System.Drawing.Size(139, 41);
-            this.KillsLab.TabIndex = 32;
-            this.KillsLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // DeathLab
-            // 
-            this.DeathLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.DeathLab.ForeColor = System.Drawing.Color.White;
-            this.DeathLab.Location = new System.Drawing.Point(404, 350);
-            this.DeathLab.Name = "DeathLab";
-            this.DeathLab.Size = new System.Drawing.Size(139, 41);
-            this.DeathLab.TabIndex = 33;
-            this.DeathLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainTabControl
             // 
@@ -368,14 +362,8 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(44, 17);
-            this.toolStripStatusLabel1.Text = "查询中";
-            // 
-            // toolStripProgressBar1
-            // 
-            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
-            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
-            this.toolStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(53, 17);
+            this.toolStripStatusLabel1.Text = "查询中...";
             // 
             // statusBar
             // 
@@ -389,6 +377,12 @@
             this.statusBar.SizingGrip = false;
             this.statusBar.TabIndex = 35;
             this.statusBar.Visible = false;
+            // 
+            // toolStripProgressBar1
+            // 
+            this.toolStripProgressBar1.Name = "toolStripProgressBar1";
+            this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 16);
+            this.toolStripProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             // 
             // MainWindow
             // 
@@ -409,9 +403,9 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.RankPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagbackPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RankPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).EndInit();
             this.MainTabControl.ResumeLayout(false);
             this.statusBar.ResumeLayout(false);
             this.statusBar.PerformLayout();
@@ -425,7 +419,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem 查询ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 更多ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem 设置ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
         private System.Windows.Forms.TabPage tabPage4;
@@ -450,8 +443,9 @@
         private System.Windows.Forms.Label IDLab;
         private System.Windows.Forms.TabControl MainTabControl;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
-        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
         private System.Windows.Forms.StatusStrip statusBar;
+        private System.Windows.Forms.ToolStripMenuItem 软件更新ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
     }
 }
 

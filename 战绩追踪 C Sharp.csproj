@@ -60,7 +60,7 @@
     <Compile Include="查询.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="查询.Designer.cs">
+    <Compile Include="查询.designer.cs">
       <DependentUpon>查询.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="MainWindow.resx">
@@ -75,9 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="查询.resx">
-      <DependentUpon>查询.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -121,5 +121,12 @@ namespace 战绩追踪_C_Sharp
         {
             return GetStats(ID, "DogTagImg", 2, 2048);
         }
+
+        public static bool JudgeSuccessful(string[] input)
+        {
+            if (input.Length <= 1) return false;
+            if (input[0] == null) return false;
+            return true;
+        }
     }
 }
