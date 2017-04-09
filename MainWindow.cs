@@ -15,7 +15,7 @@ namespace 战绩追踪_C_Sharp
         public MainWindow()
         {
             InitializeComponent();
-            var look = BFT.GetDogTagImg("ThrillerApple");
+            var look = BFT.GetWeaponsStats("liuziangexit");
         }
     }
 }
