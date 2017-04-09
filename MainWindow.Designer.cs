@@ -29,16 +29,18 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+            System.Windows.Forms.TreeNode treeNode21 = new System.Windows.Forms.TreeNode("多人模式");
+            System.Windows.Forms.TreeNode treeNode22 = new System.Windows.Forms.TreeNode("一般");
+            System.Windows.Forms.TreeNode treeNode23 = new System.Windows.Forms.TreeNode("兵种");
+            System.Windows.Forms.TreeNode treeNode24 = new System.Windows.Forms.TreeNode("载具击杀数");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.查询ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.更多ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.软件更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.RankLab = new System.Windows.Forms.Label();
             this.DeathLab = new System.Windows.Forms.Label();
             this.KillsLab = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -56,6 +58,24 @@
             this.DogtagPic = new System.Windows.Forms.PictureBox();
             this.IDLab = new System.Windows.Forms.Label();
             this.MainTabControl = new System.Windows.Forms.TabControl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.treeView1 = new System.Windows.Forms.TreeView();
+            this.详细信息文字 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
+            this.treeView2 = new System.Windows.Forms.TreeView();
+            this.武器统计 = new System.Windows.Forms.Label();
+            this.武器描述 = new System.Windows.Forms.Label();
+            this.武器名 = new System.Windows.Forms.Label();
+            this.武器图片 = new System.Windows.Forms.PictureBox();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.treeView3 = new System.Windows.Forms.TreeView();
+            this.载具统计 = new System.Windows.Forms.Label();
+            this.载具描述 = new System.Windows.Forms.Label();
+            this.载具名 = new System.Windows.Forms.Label();
+            this.载具图片 = new System.Windows.Forms.PictureBox();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
@@ -65,6 +85,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.RankPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).BeginInit();
             this.MainTabControl.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
+            this.splitContainer2.Panel1.SuspendLayout();
+            this.splitContainer2.Panel2.SuspendLayout();
+            this.splitContainer2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.武器图片)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
+            this.splitContainer3.Panel1.SuspendLayout();
+            this.splitContainer3.Panel2.SuspendLayout();
+            this.splitContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.载具图片)).BeginInit();
             this.statusBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,61 +137,29 @@
             // 软件更新ToolStripMenuItem
             // 
             this.软件更新ToolStripMenuItem.Name = "软件更新ToolStripMenuItem";
-            this.软件更新ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.软件更新ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.软件更新ToolStripMenuItem.Text = "软件更新";
+            this.软件更新ToolStripMenuItem.Click += new System.EventHandler(this.软件更新ToolStripMenuItem_Click);
             // 
             // 帮助ToolStripMenuItem
             // 
             this.帮助ToolStripMenuItem.Name = "帮助ToolStripMenuItem";
-            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.帮助ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.帮助ToolStripMenuItem.Text = "帮助";
+            this.帮助ToolStripMenuItem.Click += new System.EventHandler(this.帮助ToolStripMenuItem_Click);
             // 
             // 关于ToolStripMenuItem
             // 
             this.关于ToolStripMenuItem.Name = "关于ToolStripMenuItem";
-            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
+            this.关于ToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.关于ToolStripMenuItem.Text = "关于";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
-            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage4.Location = new System.Drawing.Point(4, 26);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(617, 434);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "载具";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
-            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage3.Location = new System.Drawing.Point(4, 26);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(617, 434);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "武器";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
-            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(617, 434);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "详细";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
             // tabPage1
             // 
             this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.tabPage1.Controls.Add(this.RankLab);
             this.tabPage1.Controls.Add(this.DeathLab);
             this.tabPage1.Controls.Add(this.KillsLab);
             this.tabPage1.Controls.Add(this.label11);
@@ -179,11 +184,21 @@
             this.tabPage1.Text = "总览";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // RankLab
+            // 
+            this.RankLab.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.RankLab.ForeColor = System.Drawing.Color.White;
+            this.RankLab.Location = new System.Drawing.Point(252, 133);
+            this.RankLab.Name = "RankLab";
+            this.RankLab.Size = new System.Drawing.Size(110, 23);
+            this.RankLab.TabIndex = 34;
+            this.RankLab.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // DeathLab
             // 
             this.DeathLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.DeathLab.ForeColor = System.Drawing.Color.White;
-            this.DeathLab.Location = new System.Drawing.Point(406, 350);
+            this.DeathLab.Location = new System.Drawing.Point(406, 352);
             this.DeathLab.Name = "DeathLab";
             this.DeathLab.Size = new System.Drawing.Size(139, 41);
             this.DeathLab.TabIndex = 33;
@@ -193,7 +208,7 @@
             // 
             this.KillsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.KillsLab.ForeColor = System.Drawing.Color.White;
-            this.KillsLab.Location = new System.Drawing.Point(406, 216);
+            this.KillsLab.Location = new System.Drawing.Point(406, 218);
             this.KillsLab.Name = "KillsLab";
             this.KillsLab.Size = new System.Drawing.Size(139, 41);
             this.KillsLab.TabIndex = 32;
@@ -203,7 +218,7 @@
             // 
             this.label11.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(407, 314);
+            this.label11.Location = new System.Drawing.Point(407, 316);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(138, 27);
             this.label11.TabIndex = 31;
@@ -213,7 +228,7 @@
             // 
             this.label12.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(408, 189);
+            this.label12.Location = new System.Drawing.Point(408, 191);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(138, 27);
             this.label12.TabIndex = 30;
@@ -223,9 +238,9 @@
             // 
             this.TimeLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.TimeLab.ForeColor = System.Drawing.Color.White;
-            this.TimeLab.Location = new System.Drawing.Point(237, 350);
+            this.TimeLab.Location = new System.Drawing.Point(252, 352);
             this.TimeLab.Name = "TimeLab";
-            this.TimeLab.Size = new System.Drawing.Size(139, 41);
+            this.TimeLab.Size = new System.Drawing.Size(110, 41);
             this.TimeLab.TabIndex = 29;
             this.TimeLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -233,9 +248,9 @@
             // 
             this.WinsLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.WinsLab.ForeColor = System.Drawing.Color.White;
-            this.WinsLab.Location = new System.Drawing.Point(237, 216);
+            this.WinsLab.Location = new System.Drawing.Point(252, 218);
             this.WinsLab.Name = "WinsLab";
-            this.WinsLab.Size = new System.Drawing.Size(139, 41);
+            this.WinsLab.Size = new System.Drawing.Size(110, 41);
             this.WinsLab.TabIndex = 28;
             this.WinsLab.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -243,9 +258,9 @@
             // 
             this.label5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(238, 314);
+            this.label5.Location = new System.Drawing.Point(252, 316);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 27);
+            this.label5.Size = new System.Drawing.Size(110, 27);
             this.label5.TabIndex = 27;
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -253,7 +268,7 @@
             // 
             this.label6.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(253, 189);
+            this.label6.Location = new System.Drawing.Point(252, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(110, 27);
             this.label6.TabIndex = 26;
@@ -263,7 +278,7 @@
             // 
             this.KPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.KPMLab.ForeColor = System.Drawing.Color.White;
-            this.KPMLab.Location = new System.Drawing.Point(67, 350);
+            this.KPMLab.Location = new System.Drawing.Point(67, 352);
             this.KPMLab.Name = "KPMLab";
             this.KPMLab.Size = new System.Drawing.Size(139, 41);
             this.KPMLab.TabIndex = 25;
@@ -273,7 +288,7 @@
             // 
             this.SPMLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.SPMLab.ForeColor = System.Drawing.Color.White;
-            this.SPMLab.Location = new System.Drawing.Point(67, 216);
+            this.SPMLab.Location = new System.Drawing.Point(67, 218);
             this.SPMLab.Name = "SPMLab";
             this.SPMLab.Size = new System.Drawing.Size(139, 41);
             this.SPMLab.TabIndex = 24;
@@ -283,7 +298,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(68, 314);
+            this.label4.Location = new System.Drawing.Point(68, 316);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(138, 27);
             this.label4.TabIndex = 23;
@@ -293,7 +308,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(69, 189);
+            this.label1.Location = new System.Drawing.Point(69, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(138, 27);
             this.label1.TabIndex = 22;
@@ -304,7 +319,7 @@
             this.DogtagbackPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DogtagbackPic.ErrorImage = null;
             this.DogtagbackPic.InitialImage = null;
-            this.DogtagbackPic.Location = new System.Drawing.Point(369, 46);
+            this.DogtagbackPic.Location = new System.Drawing.Point(368, 46);
             this.DogtagbackPic.Name = "DogtagbackPic";
             this.DogtagbackPic.Size = new System.Drawing.Size(110, 110);
             this.DogtagbackPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -315,10 +330,10 @@
             // 
             this.RankPic.ErrorImage = null;
             this.RankPic.InitialImage = null;
-            this.RankPic.Location = new System.Drawing.Point(253, 46);
+            this.RankPic.Location = new System.Drawing.Point(252, 46);
             this.RankPic.Name = "RankPic";
             this.RankPic.Size = new System.Drawing.Size(110, 110);
-            this.RankPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.RankPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.RankPic.TabIndex = 2;
             this.RankPic.TabStop = false;
             // 
@@ -327,7 +342,7 @@
             this.DogtagPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DogtagPic.ErrorImage = null;
             this.DogtagPic.InitialImage = null;
-            this.DogtagPic.Location = new System.Drawing.Point(137, 46);
+            this.DogtagPic.Location = new System.Drawing.Point(136, 46);
             this.DogtagPic.Name = "DogtagPic";
             this.DogtagPic.Size = new System.Drawing.Size(110, 110);
             this.DogtagPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -358,6 +373,260 @@
             this.MainTabControl.SelectedIndex = 0;
             this.MainTabControl.Size = new System.Drawing.Size(625, 464);
             this.MainTabControl.TabIndex = 1;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
+            this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage2.Controls.Add(this.splitContainer1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(617, 434);
+            this.tabPage2.TabIndex = 4;
+            this.tabPage2.Text = "详细";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.treeView1);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.详细信息文字);
+            this.splitContainer1.Size = new System.Drawing.Size(617, 434);
+            this.splitContainer1.SplitterDistance = 188;
+            this.splitContainer1.TabIndex = 0;
+            this.splitContainer1.TabStop = false;
+            // 
+            // treeView1
+            // 
+            this.treeView1.BackColor = System.Drawing.Color.White;
+            this.treeView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.treeView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView1.Font = new System.Drawing.Font("微软雅黑 Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.treeView1.HideSelection = false;
+            this.treeView1.Location = new System.Drawing.Point(0, 0);
+            this.treeView1.Name = "treeView1";
+            treeNode21.Name = "多人模式节点";
+            treeNode21.Text = "多人模式";
+            treeNode21.ToolTipText = "多人模式分数统计。";
+            treeNode22.Name = "一般节点";
+            treeNode22.Text = "一般";
+            treeNode23.Name = "兵种节点";
+            treeNode23.Text = "兵种";
+            treeNode23.ToolTipText = "兵种分数和击杀数统计。";
+            treeNode24.Name = "载具击杀数节点";
+            treeNode24.Text = "载具击杀数";
+            treeNode24.ToolTipText = "载具击杀数统计。";
+            this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
+            treeNode21,
+            treeNode22,
+            treeNode23,
+            treeNode24});
+            this.treeView1.ShowNodeToolTips = true;
+            this.treeView1.Size = new System.Drawing.Size(185, 434);
+            this.treeView1.TabIndex = 0;
+            this.treeView1.TabStop = false;
+            this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterSelect);
+            // 
+            // 详细信息文字
+            // 
+            this.详细信息文字.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.详细信息文字.ForeColor = System.Drawing.Color.White;
+            this.详细信息文字.Location = new System.Drawing.Point(-1, 0);
+            this.详细信息文字.Name = "详细信息文字";
+            this.详细信息文字.Size = new System.Drawing.Size(430, 435);
+            this.详细信息文字.TabIndex = 0;
+            this.详细信息文字.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
+            this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage3.Controls.Add(this.splitContainer2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 26);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(617, 434);
+            this.tabPage3.TabIndex = 5;
+            this.tabPage3.Text = "武器";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer2
+            // 
+            this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Name = "splitContainer2";
+            // 
+            // splitContainer2.Panel1
+            // 
+            this.splitContainer2.Panel1.Controls.Add(this.treeView2);
+            // 
+            // splitContainer2.Panel2
+            // 
+            this.splitContainer2.Panel2.Controls.Add(this.武器统计);
+            this.splitContainer2.Panel2.Controls.Add(this.武器描述);
+            this.splitContainer2.Panel2.Controls.Add(this.武器名);
+            this.splitContainer2.Panel2.Controls.Add(this.武器图片);
+            this.splitContainer2.Size = new System.Drawing.Size(617, 434);
+            this.splitContainer2.SplitterDistance = 188;
+            this.splitContainer2.TabIndex = 1;
+            this.splitContainer2.TabStop = false;
+            // 
+            // treeView2
+            // 
+            this.treeView2.BackColor = System.Drawing.Color.White;
+            this.treeView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.treeView2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView2.ForeColor = System.Drawing.Color.Black;
+            this.treeView2.HideSelection = false;
+            this.treeView2.Location = new System.Drawing.Point(0, 0);
+            this.treeView2.Name = "treeView2";
+            this.treeView2.ShowNodeToolTips = true;
+            this.treeView2.Size = new System.Drawing.Size(185, 434);
+            this.treeView2.TabIndex = 0;
+            this.treeView2.TabStop = false;
+            this.treeView2.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView2_AfterSelect);
+            // 
+            // 武器统计
+            // 
+            this.武器统计.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.武器统计.ForeColor = System.Drawing.Color.White;
+            this.武器统计.Location = new System.Drawing.Point(-1, 254);
+            this.武器统计.Name = "武器统计";
+            this.武器统计.Size = new System.Drawing.Size(423, 122);
+            this.武器统计.TabIndex = 4;
+            this.武器统计.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // 武器描述
+            // 
+            this.武器描述.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.武器描述.ForeColor = System.Drawing.Color.White;
+            this.武器描述.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.武器描述.Location = new System.Drawing.Point(-1, 173);
+            this.武器描述.Name = "武器描述";
+            this.武器描述.Size = new System.Drawing.Size(423, 71);
+            this.武器描述.TabIndex = 3;
+            // 
+            // 武器名
+            // 
+            this.武器名.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.武器名.ForeColor = System.Drawing.Color.White;
+            this.武器名.Location = new System.Drawing.Point(-2, 146);
+            this.武器名.Name = "武器名";
+            this.武器名.Size = new System.Drawing.Size(423, 27);
+            this.武器名.TabIndex = 2;
+            this.武器名.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // 武器图片
+            // 
+            this.武器图片.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.武器图片.ErrorImage = null;
+            this.武器图片.InitialImage = null;
+            this.武器图片.Location = new System.Drawing.Point(82, 43);
+            this.武器图片.Name = "武器图片";
+            this.武器图片.Size = new System.Drawing.Size(256, 100);
+            this.武器图片.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.武器图片.TabIndex = 1;
+            this.武器图片.TabStop = false;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
+            this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.tabPage4.Controls.Add(this.splitContainer3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 26);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(617, 434);
+            this.tabPage4.TabIndex = 6;
+            this.tabPage4.Text = "载具";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // splitContainer3
+            // 
+            this.splitContainer3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Name = "splitContainer3";
+            // 
+            // splitContainer3.Panel1
+            // 
+            this.splitContainer3.Panel1.Controls.Add(this.treeView3);
+            // 
+            // splitContainer3.Panel2
+            // 
+            this.splitContainer3.Panel2.Controls.Add(this.载具统计);
+            this.splitContainer3.Panel2.Controls.Add(this.载具描述);
+            this.splitContainer3.Panel2.Controls.Add(this.载具名);
+            this.splitContainer3.Panel2.Controls.Add(this.载具图片);
+            this.splitContainer3.Size = new System.Drawing.Size(617, 434);
+            this.splitContainer3.SplitterDistance = 188;
+            this.splitContainer3.TabIndex = 0;
+            this.splitContainer3.TabStop = false;
+            // 
+            // treeView3
+            // 
+            this.treeView3.BackColor = System.Drawing.Color.White;
+            this.treeView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.treeView3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.treeView3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView3.ForeColor = System.Drawing.Color.Black;
+            this.treeView3.HideSelection = false;
+            this.treeView3.Location = new System.Drawing.Point(0, 0);
+            this.treeView3.Name = "treeView3";
+            this.treeView3.ShowNodeToolTips = true;
+            this.treeView3.Size = new System.Drawing.Size(185, 434);
+            this.treeView3.TabIndex = 1;
+            this.treeView3.TabStop = false;
+            this.treeView3.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView3_AfterSelect);
+            // 
+            // 载具统计
+            // 
+            this.载具统计.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.载具统计.ForeColor = System.Drawing.Color.White;
+            this.载具统计.Location = new System.Drawing.Point(-1, 254);
+            this.载具统计.Name = "载具统计";
+            this.载具统计.Size = new System.Drawing.Size(423, 122);
+            this.载具统计.TabIndex = 8;
+            this.载具统计.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // 载具描述
+            // 
+            this.载具描述.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.载具描述.ForeColor = System.Drawing.Color.White;
+            this.载具描述.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.载具描述.Location = new System.Drawing.Point(-1, 173);
+            this.载具描述.Name = "载具描述";
+            this.载具描述.Size = new System.Drawing.Size(423, 71);
+            this.载具描述.TabIndex = 7;
+            // 
+            // 载具名
+            // 
+            this.载具名.Font = new System.Drawing.Font("微软雅黑", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.载具名.ForeColor = System.Drawing.Color.White;
+            this.载具名.Location = new System.Drawing.Point(-2, 146);
+            this.载具名.Name = "载具名";
+            this.载具名.Size = new System.Drawing.Size(423, 27);
+            this.载具名.TabIndex = 6;
+            this.载具名.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // 载具图片
+            // 
+            this.载具图片.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.载具图片.ErrorImage = null;
+            this.载具图片.InitialImage = null;
+            this.载具图片.Location = new System.Drawing.Point(82, 43);
+            this.载具图片.Name = "载具图片";
+            this.载具图片.Size = new System.Drawing.Size(256, 100);
+            this.载具图片.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.载具图片.TabIndex = 5;
+            this.载具图片.TabStop = false;
             // 
             // toolStripStatusLabel1
             // 
@@ -407,6 +676,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.RankPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagPic)).EndInit();
             this.MainTabControl.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
+            this.splitContainer2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.武器图片)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
+            this.splitContainer3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.载具图片)).EndInit();
             this.statusBar.ResumeLayout(false);
             this.statusBar.PerformLayout();
             this.ResumeLayout(false);
@@ -421,9 +707,6 @@
         private System.Windows.Forms.ToolStripMenuItem 更多ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 帮助ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 关于ToolStripMenuItem;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Label DeathLab;
         private System.Windows.Forms.Label KillsLab;
@@ -446,6 +729,25 @@
         private System.Windows.Forms.StatusStrip statusBar;
         private System.Windows.Forms.ToolStripMenuItem 软件更新ToolStripMenuItem;
         private System.Windows.Forms.ToolStripProgressBar toolStripProgressBar1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.TreeView treeView1;
+        private System.Windows.Forms.Label 详细信息文字;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.SplitContainer splitContainer2;
+        private System.Windows.Forms.TreeView treeView2;
+        private System.Windows.Forms.Label 武器统计;
+        private System.Windows.Forms.Label 武器描述;
+        private System.Windows.Forms.Label 武器名;
+        private System.Windows.Forms.PictureBox 武器图片;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.SplitContainer splitContainer3;
+        private System.Windows.Forms.TreeView treeView3;
+        private System.Windows.Forms.Label 载具统计;
+        private System.Windows.Forms.Label 载具描述;
+        private System.Windows.Forms.Label 载具名;
+        private System.Windows.Forms.PictureBox 载具图片;
+        private System.Windows.Forms.Label RankLab;
     }
 }
 
