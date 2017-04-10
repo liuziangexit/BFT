@@ -18,6 +18,7 @@ namespace 战绩追踪_C_Sharp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
+            if (File.Exists(Application.StartupPath + "\\Update.bat")) File.Delete(Application.StartupPath + "\\Update.bat");
         }
 
         static public void GetLastID()

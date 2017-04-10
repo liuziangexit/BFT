@@ -63,7 +63,7 @@
             this.labelProductName.Name = "labelProductName";
             this.labelProductName.Size = new System.Drawing.Size(119, 12);
             this.labelProductName.TabIndex = 25;
-            this.labelProductName.Text = "战绩追踪 2.0 Beta 5";
+            this.labelProductName.Text = "战绩追踪 2.0 Beta 6";
             this.labelProductName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCopyright
@@ -73,9 +73,9 @@
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 0, 3, 0);
             this.labelCopyright.MaximumSize = new System.Drawing.Size(0, 16);
             this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(77, 12);
+            this.labelCopyright.Size = new System.Drawing.Size(83, 12);
             this.labelCopyright.TabIndex = 26;
-            this.labelCopyright.Text = "2017年4月9日";
+            this.labelCopyright.Text = "2017年4月10日";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCompanyName

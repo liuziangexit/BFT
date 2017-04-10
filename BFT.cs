@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
+using System.IO;
 
 namespace 战绩追踪_C_Sharp
 {
@@ -11,7 +13,7 @@ namespace 战绩追踪_C_Sharp
     {
         private static string game = "tunguska", Wfilename = "WeaponsTranslate.txt", Vfilename = "VehiclesTranslate.txt";
 
-        [DllImport("BFT C++ DLL.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
+        [DllImport("BFT-CPP-DLL.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
         private unsafe extern static void BFT_CPP_CALL(char* input, char* output, int outputSize);
 
         private static string GetCommandStr(string ID, string stats)
@@ -54,7 +56,15 @@ namespace 战绩追踪_C_Sharp
             var res = new char[resultSize];
             fixed (char* input = &(command.ToCharArray()[0]), output = (&res[0]))
             {
-                BFT_CPP_CALL(input, output, resultSize);
+                try
+                {
+                    BFT_CPP_CALL(input, output, resultSize);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("此模块出现严重问题，战绩追踪将会退出。如果此问题多次发生，您可以:1.升级到最新版本的战绩追踪，在新版本中此问题很可能已经得到了修复；2.向我反馈，将此错误信息截屏发送到邮箱liuziang@liuziangexit.com，非常感谢；3.重新打开战绩追踪并再试一次。", "BFT-CPP-DLL 中的严重问题");
+                    throw ex;
+                }
                 var temp = GetLines(new string(output), inputSize);
                 int tempRealSize = 0;
                 for (; tempRealSize < temp.Length; tempRealSize++)
@@ -76,7 +86,15 @@ namespace 战绩追踪_C_Sharp
             var res = new char[resultSize];
             fixed (char* input = &(command.ToCharArray()[0]), output = (&res[0]))
             {
-                BFT_CPP_CALL(input, output, resultSize);
+                try
+                {
+                    BFT_CPP_CALL(input, output, resultSize);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("此模块出现严重问题，战绩追踪将会退出。如果此问题多次发生，您可以:1.升级到最新版本的战绩追踪，在新版本中此问题很可能已经得到了修复；2.向我反馈，将此错误信息截屏发送到邮箱liuziang@liuziangexit.com，非常感谢；3.重新打开战绩追踪并再试一次。", "BFT-CPP-DLL 中的严重问题");
+                    throw ex;
+                }
                 var temp = GetLines(new string(output), inputSize);
                 int tempRealSize = 0;
                 for (; tempRealSize < temp.Length; tempRealSize++)
