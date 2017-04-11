@@ -17,7 +17,36 @@ namespace 战绩追踪_C_Sharp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            ClearFiles();
+            if(!CheckFiles())
+            {
+                var Box = new Message("无法启动", "战绩追踪无法启动，因为文件丢失。", "修复");
+                Box.ShowDialog();
+                System.Diagnostics.Process p = new System.Diagnostics.Process();
+                p.StartInfo.FileName = "cmd.exe";
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.RedirectStandardInput = true;
+                p.StartInfo.RedirectStandardOutput = true;
+                p.StartInfo.RedirectStandardError = true;
+                p.StartInfo.CreateNoWindow = true;
+                p.Start();
+                p.StandardInput.WriteLine("start BFT_M.exe");
+                p.StandardInput.AutoFlush = true;
+                p.StandardInput.WriteLine("exit");
+                p.WaitForExit();
+                p.Close();
+                System.Environment.Exit(0);
+            }
             Application.Run(new MainWindow());
+        }
+
+        static bool CheckFiles() {
+            if (File.Exists(Application.StartupPath + "\\BFT-CPP-DLL.dll") && File.Exists(Application.StartupPath + "\\cpprest140_2_9.dll")) return true;
+            return false;
+        }
+
+        static void ClearFiles()
+        {
             if (File.Exists(Application.StartupPath + "\\Update.bat")) File.Delete(Application.StartupPath + "\\Update.bat");
         }
 

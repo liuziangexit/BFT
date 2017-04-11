@@ -62,7 +62,9 @@ namespace 战绩追踪_C_Sharp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("此模块出现严重问题，战绩追踪将会退出。如果此问题多次发生，您可以:1.升级到最新版本的战绩追踪，在新版本中此问题很可能已经得到了修复；2.向我反馈，将此错误信息截屏发送到邮箱liuziang@liuziangexit.com，非常感谢；3.重新打开战绩追踪并再试一次。", "BFT-CPP-DLL 中的严重问题");
+                    var Box = new Message("BFT-CPP-DLL 中的严重问题", "BFT-CPP-DLL 模块出现严重问题。", "退出战绩追踪");
+                    Box.ShowDialog();
+                    System.Environment.Exit(0);
                     throw ex;
                 }
                 var temp = GetLines(new string(output), inputSize);
@@ -92,7 +94,9 @@ namespace 战绩追踪_C_Sharp
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("此模块出现严重问题，战绩追踪将会退出。如果此问题多次发生，您可以:1.升级到最新版本的战绩追踪，在新版本中此问题很可能已经得到了修复；2.向我反馈，将此错误信息截屏发送到邮箱liuziang@liuziangexit.com，非常感谢；3.重新打开战绩追踪并再试一次。", "BFT-CPP-DLL 中的严重问题");
+                    var Box = new Message("BFT-CPP-DLL 中的严重问题", "BFT-CPP-DLL 模块出现严重问题。", "退出战绩追踪");
+                    Box.ShowDialog();
+                    System.Environment.Exit(0);
                     throw ex;
                 }
                 var temp = GetLines(new string(output), inputSize);

@@ -60,9 +60,12 @@ namespace 战绩追踪_C_Sharp
 
         private void ShowErrorBox(string[] result)
         {
+            var Box = new Message("查询失败", "");
+            Box.Owner = this;
             if (result[0] != null)
-                MessageBox.Show(result[0], "查询失败");
-            else MessageBox.Show("未知的原因", "查询失败");
+                Box.SetMessage(result[0]);
+            else Box.SetMessage("未知的原因");
+            Box.ShowDialog();
         }
 
         private void RefreshPage1(string[] result)
