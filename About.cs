@@ -12,21 +12,35 @@ namespace 战绩追踪_C_Sharp
 {
     public partial class About : Form
     {
+        private bool isMouseDown = false;
+        private Point mouseOff;
+
         public About()
         {
             InitializeComponent();
         }
 
-        private void pictureBox4_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var box = new ShowText();
+            box.ShowDialog();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            logoPictureBox.Focus();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             try
             {
-                System.Diagnostics.Process.Start("https://liuziangexit.com/");
+                System.Diagnostics.Process.Start("https://github.com/liuziangexit/BFT-CPP-Native-DLL");
             }
             catch (Exception) { }
         }
 
-        private void logoPictureBox_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -35,11 +49,11 @@ namespace 战绩追踪_C_Sharp
             catch (Exception) { }
         }
 
-        private void SourceCodeLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             try
             {
-                System.Diagnostics.Process.Start("https://github.com/liuziangexit/BFT");
+                System.Diagnostics.Process.Start("https://liuziangexit.com");
             }
             catch (Exception) { }
         }

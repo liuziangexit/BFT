@@ -13,14 +13,42 @@ namespace 战绩追踪_C_Sharp
 {
     public partial class MainWindow : Form
     {
-        static private volatile int finishFlag = 0;
+        static private volatile int Page1finishFlag = 0, Page2finishFlag = 0;
         static private string inputID;
         static private string[] DSresult = new string[40], KSresult = new string[7], WSresult = new string[1500], VSresult = new string[372];
+        private bool isMouseDown = false;
+        private Point mouseOff;
 
         public MainWindow()
         {
             InitializeComponent();
             CheckForIllegalCrossThreadCalls = false;
+
+            var ControlBox = new TitleBarNoMax();
+            ControlBox.Dock = DockStyle.Right;
+            topPanel.Controls.Add(ControlBox);
+            ControlBox.OnClickExitButton += new TitleBarNoMax.ClickHandler(TitleClicked);
+        }
+
+        private void TitleClicked(object sender, TitleClickArgs e)
+        {
+            switch (e.which)
+            {
+                case 1: { try { Environment.Exit(0); } catch (Exception) { Environment.Exit(0); } } break;
+                case 2:
+                    {
+                        if (WindowState == FormWindowState.Normal)
+                            WindowState = FormWindowState.Maximized;
+                        else WindowState = FormWindowState.Normal;
+                    }
+                    break;
+                case 3:
+                    {
+                        WindowState = FormWindowState.Minimized;
+                    }
+                    break;
+                default: { throw new Exception(); };
+            }
         }
 
         private string coutLineStatic(string title, int howmuch, string value)
@@ -151,7 +179,7 @@ namespace 战绩追踪_C_Sharp
                     详细信息文字.Text += coutLineNum("修复数", 51, result[13]) + "\n";
                     详细信息文字.Text += coutLineNum("急救数", 51, result[14]) + "\n";
                     详细信息文字.Text += coutLineNum("已游玩回合数", 44, result[15]) + "\n";
-                    详细信息文字.Text += coutLineCh("最喜爱的地图", 49, result[16]) + "\n";
+                    //详细信息文字.Text += coutLineCh("最喜爱的地图", 49, result[16]) + "\n";
                     详细信息文字.Text += coutLineNum("最专精的职业", 43, result[17]) + "\n";
                     详细信息文字.Text += coutLineNum("最长爆头距离", 44, result[18]) + "\n";
                     详细信息文字.Text += coutLineNum("击杀最多的载具", 39, result[19]) + "\n";
@@ -313,55 +341,56 @@ namespace 战绩追踪_C_Sharp
         private void QueryBS()
         {
             RefreshPage1(BFT.GetBasicStats(inputID));
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            Page1finishFlag--;
+            if (Page1finishFlag <= 0) { loadingLabel.Visible = false; Page1finishFlag = 0; }
         }
 
         private void QueryDT()
         {
             RefreshDogtag(BFT.GetDogTagImg(inputID));
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            Page1finishFlag--;
+            if (Page1finishFlag <= 0) { loadingLabel.Visible = false; Page1finishFlag = 0; }
         }
 
         private void QueryDS()
         {
+            loadingLabel2.Visible = true;
             DSresult = BFT.GetDetailedStats(inputID);
             RefreshPage2(DSresult, KSresult);
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            Page2finishFlag--;
+            if (Page2finishFlag <= 0) { loadingLabel2.Visible = false; Page2finishFlag = 0; }
         }
 
         private void QueryKS()
         {
             KSresult = BFT.GetKitRanks(inputID);
             RefreshPage2(DSresult, KSresult);
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            Page2finishFlag--;
+            if (Page2finishFlag <= 0) { loadingLabel2.Visible = false; Page2finishFlag = 0; }
         }
 
         private void QueryWS()
         {
+            loadingLabel3.Visible = true;
             WSresult = BFT.GetWeaponsStats(inputID);
             treeView2.Nodes.Clear();
             ClearWeapons();
             MakePage3(WSresult);
             RefreshPage3(WSresult);
 
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            loadingLabel3.Visible = false;
         }
 
         private void QueryVS()
         {
+            loadingLabel4.Visible = true;
             VSresult = BFT.GetVehiclesStats(inputID);
             treeView3.Nodes.Clear();
             ClearVehicles();
             MakePage4(VSresult);
             RefreshPage4(VSresult);
 
-            finishFlag--;
-            if (finishFlag <= 0) { statusBar.Visible = false; finishFlag = 0; }
+            loadingLabel4.Visible = false;
         }
 
         private void ClearArray(ref string[] input)
@@ -374,7 +403,7 @@ namespace 战绩追踪_C_Sharp
 
         private void 查询ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (finishFlag != 0) return;
+            if (loadingLabel.Visible || loadingLabel2.Visible || loadingLabel3.Visible || loadingLabel4.Visible) return;
             Program.GetLastID();
             var Box = new 查询(Program.lastid);
             if (Box.ShowDialog() == DialogResult.OK)
@@ -401,7 +430,7 @@ namespace 战绩追踪_C_Sharp
             WSt.IsBackground = true;
             VSt.IsBackground = true;
 
-            statusBar.Visible = true;
+            loadingLabel.Visible = true;
             ClearArray(ref DSresult);
             ClearArray(ref KSresult);
             ClearArray(ref WSresult);
@@ -411,10 +440,11 @@ namespace 战绩追踪_C_Sharp
             {
                 BSt.Start();
                 Dogtagt.Start();
-                finishFlag = 2;
-                if (Box.Deatiled) { DSt.Start(); KSt.Start(); finishFlag += 2; }
-                if (Box.Weapons) { WSt.Start(); finishFlag++; }
-                if (Box.Vehicles) { VSt.Start(); finishFlag++; }
+                Page1finishFlag = 2;
+                Page2finishFlag = 2;
+                if (Box.Deatiled) { DSt.Start(); KSt.Start(); }
+                if (Box.Weapons) { WSt.Start(); }
+                if (Box.Vehicles) { VSt.Start(); }
             }
             catch (Exception)
             {
@@ -455,6 +485,27 @@ namespace 战绩追踪_C_Sharp
             System.Environment.Exit(0);
         }
 
+        private void topPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Left) return;
+            mouseOff = new Point(-e.X, -e.Y);
+            isMouseDown = true;
+        }
+
+        private void topPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (!isMouseDown) return;
+            Point temp = Control.MousePosition;
+            temp.Offset(mouseOff.X, mouseOff.Y);
+            Location = temp;
+        }
+
+        private void topPanel_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (isMouseDown)
+                isMouseDown = false;
+        }
+        
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             RefreshPage2(DSresult, KSresult);

@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>战绩追踪_C_Sharp</RootNamespace>
-    <AssemblyName>战绩追踪 C Sharp</AssemblyName>
+    <AssemblyName>BFT</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -69,7 +69,7 @@
     <Compile Include="About.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="About.Designer.cs">
+    <Compile Include="About.designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="BFT.cs" />
@@ -87,6 +87,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShowText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowText.designer.cs">
+      <DependentUpon>ShowText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleBarNoMax.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TitleBarNoMax.designer.cs">
+      <DependentUpon>TitleBarNoMax.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleBarOnlyClose.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TitleBarOnlyClose.designer.cs">
+      <DependentUpon>TitleBarOnlyClose.cs</DependentUpon>
+    </Compile>
     <Compile Include="查询.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,7 +113,6 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
@@ -112,7 +129,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ShowText.resx">
+      <DependentUpon>ShowText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleBarNoMax.resx">
+      <DependentUpon>TitleBarNoMax.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleBarOnlyClose.resx">
+      <DependentUpon>TitleBarOnlyClose.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -130,6 +157,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BFT_ICO%402x.ico" />
+    <None Include="Resources\In The Name Of The Tsar.png" />
+    <None Include="Resources\标题栏渐变.png" />
+    <None Include="Resources\MinimizeWhite.png" />
+    <None Include="Resources\Minimize.png" />
+    <None Include="Resources\MaximizeWhite.png" />
+    <None Include="Resources\Maximize.png" />
+    <None Include="Resources\CloseWhite.png" />
+    <None Include="Resources\Close.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
