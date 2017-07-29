@@ -18,6 +18,8 @@ namespace 战绩追踪_C_Sharp
         static private string[] DSresult = new string[40], KSresult = new string[7], WSresult = new string[1500], VSresult = new string[372];
         private bool isMouseDown = false;
         private Point mouseOff;
+        static TreeView WPbackup, VHbackup;
+        static bool is_WPsearching = false, is_VHsearching = false;
 
         public MainWindow()
         {
@@ -498,6 +500,140 @@ namespace 战绩追踪_C_Sharp
             Point temp = Control.MousePosition;
             temp.Offset(mouseOff.X, mouseOff.Y);
             Location = temp;
+        }
+
+        private void textBox1_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && textBox1.Text != "")
+                textBox1_dosearch(textBox1.Text);
+
+            if (e.KeyCode == Keys.Escape)
+                textBox1_nosearch();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+                textBox1_nosearch();
+        }
+
+        private void textBox1_Enter(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox1_Leave(object sender, EventArgs e)
+        {
+            textBox1.Text = "搜索列表...";
+            textBox1.ForeColor = Color.Gray;
+        }
+
+        private void textBox1_dosearch(string str)
+        {
+            if (loadingLabel3.Visible)
+                return;
+
+            if (!is_WPsearching)
+                WPbackup = new TreeView();
+
+            for (int i = 0; i < treeView2.Nodes.Count;)
+            {
+                if (!is_WPsearching)
+                    WPbackup.Nodes.Add(treeView2.Nodes[i].Text);
+
+                if (treeView2.Nodes[i].Text.IndexOf(str) == -1)
+                {
+                    treeView2.Nodes.RemoveAt(i);
+                    continue;
+                }
+                i++;
+            }
+            is_WPsearching = true;
+        }
+
+        private void textBox1_nosearch()
+        {
+            if (!is_WPsearching) return;
+
+            treeView2.Nodes.Clear();
+            for (int i = 0; i < WPbackup.Nodes.Count; i++)
+                treeView2.Nodes.Add(WPbackup.Nodes[i].Text);
+
+            is_WPsearching = false;
+        }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter && textBox2.Text != "")
+                textBox2_dosearch(textBox2.Text);
+
+            if (e.KeyCode == Keys.Escape)
+                textBox2_nosearch();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (textBox2.Text == "")
+                textBox2_nosearch();
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            textBox2.Text = "";
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Leave(object sender, EventArgs e)
+        {
+            textBox2.Text = "搜索列表...";
+            textBox2.ForeColor = Color.Gray;
+        }
+
+        private void treeView2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                textBox1_nosearch();
+        }
+
+        private void treeView3_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                textBox2_nosearch();
+        }
+
+        private void textBox2_dosearch(string str)
+        {
+            if (loadingLabel4.Visible)
+                return;
+
+            if (!is_VHsearching)
+                VHbackup = new TreeView();
+
+            for (int i = 0; i < treeView3.Nodes.Count;)
+            {
+                if (!is_VHsearching)
+                    VHbackup.Nodes.Add(treeView3.Nodes[i].Text);
+
+                if (treeView3.Nodes[i].Text.IndexOf(str) == -1)
+                {
+                    treeView3.Nodes.RemoveAt(i);
+                    continue;
+                }
+                i++;
+            }
+            is_VHsearching = true;
+        }
+
+        private void textBox2_nosearch()
+        {
+            if (!is_VHsearching) return;
+
+            treeView3.Nodes.Clear();
+            for (int i = 0; i < VHbackup.Nodes.Count; i++)
+                treeView3.Nodes.Add(VHbackup.Nodes[i].Text);
+
+            is_VHsearching = false;
         }
 
         private void topPanel_MouseUp(object sender, MouseEventArgs e)

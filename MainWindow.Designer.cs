@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode13 = new System.Windows.Forms.TreeNode("多人模式");
-            System.Windows.Forms.TreeNode treeNode14 = new System.Windows.Forms.TreeNode("一般");
-            System.Windows.Forms.TreeNode treeNode15 = new System.Windows.Forms.TreeNode("兵种");
-            System.Windows.Forms.TreeNode treeNode16 = new System.Windows.Forms.TreeNode("载具击杀数");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("多人模式");
+            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("一般");
+            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("兵种");
+            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("载具击杀数");
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.loadingLabel = new System.Windows.Forms.Label();
@@ -61,6 +61,7 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.treeView2 = new System.Windows.Forms.TreeView();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.loadingLabel3 = new System.Windows.Forms.Label();
             this.武器统计 = new System.Windows.Forms.Label();
             this.武器描述 = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.软件更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.MainTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagbackPic)).BeginInit();
@@ -114,8 +116,9 @@
             this.MainTabControl.Controls.Add(this.tabPage3);
             this.MainTabControl.Controls.Add(this.tabPage4);
             this.MainTabControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.MainTabControl.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.MainTabControl.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.MainTabControl.Location = new System.Drawing.Point(0, 30);
+            this.MainTabControl.Margin = new System.Windows.Forms.Padding(0);
             this.MainTabControl.Name = "MainTabControl";
             this.MainTabControl.SelectedIndex = 0;
             this.MainTabControl.Size = new System.Drawing.Size(625, 459);
@@ -123,7 +126,8 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.In_The_Name_Of_The_Tsar;
+            this.tabPage1.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage1.BackgroundImage")));
             this.tabPage1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage1.Controls.Add(this.loadingLabel);
             this.tabPage1.Controls.Add(this.RankLab);
@@ -149,7 +153,6 @@
             this.tabPage1.Size = new System.Drawing.Size(617, 429);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "总览";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // loadingLabel
             // 
@@ -341,7 +344,8 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.In_The_Name_Of_The_Tsar;
+            this.tabPage2.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage2.BackgroundImage")));
             this.tabPage2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage2.Controls.Add(this.splitContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
@@ -349,7 +353,6 @@
             this.tabPage2.Size = new System.Drawing.Size(617, 429);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "详细";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // splitContainer1
             // 
@@ -380,22 +383,22 @@
             this.treeView1.HideSelection = false;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode13.Name = "多人模式节点";
-            treeNode13.Text = "多人模式";
-            treeNode13.ToolTipText = "多人模式分数统计。";
-            treeNode14.Name = "一般节点";
-            treeNode14.Text = "一般";
-            treeNode15.Name = "兵种节点";
-            treeNode15.Text = "兵种";
-            treeNode15.ToolTipText = "兵种分数和击杀数统计。";
-            treeNode16.Name = "载具击杀数节点";
-            treeNode16.Text = "载具击杀数";
-            treeNode16.ToolTipText = "载具击杀数统计。";
+            treeNode57.Name = "多人模式节点";
+            treeNode57.Text = "多人模式";
+            treeNode57.ToolTipText = "多人模式分数统计。";
+            treeNode58.Name = "一般节点";
+            treeNode58.Text = "一般";
+            treeNode59.Name = "兵种节点";
+            treeNode59.Text = "兵种";
+            treeNode59.ToolTipText = "兵种分数和击杀数统计。";
+            treeNode60.Name = "载具击杀数节点";
+            treeNode60.Text = "载具击杀数";
+            treeNode60.ToolTipText = "载具击杀数统计。";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode13,
-            treeNode14,
-            treeNode15,
-            treeNode16});
+            treeNode57,
+            treeNode58,
+            treeNode59,
+            treeNode60});
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(185, 429);
             this.treeView1.TabIndex = 0;
@@ -427,7 +430,8 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.In_The_Name_Of_The_Tsar;
+            this.tabPage3.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage3.BackgroundImage")));
             this.tabPage3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage3.Controls.Add(this.splitContainer2);
             this.tabPage3.Location = new System.Drawing.Point(4, 26);
@@ -435,7 +439,6 @@
             this.tabPage3.Size = new System.Drawing.Size(617, 429);
             this.tabPage3.TabIndex = 5;
             this.tabPage3.Text = "武器";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // splitContainer2
             // 
@@ -446,6 +449,7 @@
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.Controls.Add(this.treeView2);
+            this.splitContainer2.Panel1.Controls.Add(this.textBox1);
             // 
             // splitContainer2.Panel2
             // 
@@ -464,16 +468,32 @@
             this.treeView2.BackColor = System.Drawing.Color.White;
             this.treeView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeView2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.treeView2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView2.ForeColor = System.Drawing.Color.Black;
             this.treeView2.HideSelection = false;
-            this.treeView2.Location = new System.Drawing.Point(0, 0);
+            this.treeView2.Location = new System.Drawing.Point(0, 23);
             this.treeView2.Name = "treeView2";
             this.treeView2.ShowNodeToolTips = true;
-            this.treeView2.Size = new System.Drawing.Size(185, 429);
+            this.treeView2.Size = new System.Drawing.Size(188, 406);
             this.treeView2.TabIndex = 0;
             this.treeView2.TabStop = false;
             this.treeView2.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView2_AfterSelect);
+            this.treeView2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.treeView2_KeyUp);
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox1.ForeColor = System.Drawing.Color.Gray;
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(188, 23);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "搜索列表...";
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
+            this.textBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyUp);
+            this.textBox1.Leave += new System.EventHandler(this.textBox1_Leave);
             // 
             // loadingLabel3
             // 
@@ -492,7 +512,7 @@
             // 
             this.武器统计.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.武器统计.ForeColor = System.Drawing.Color.White;
-            this.武器统计.Location = new System.Drawing.Point(-1, 254);
+            this.武器统计.Location = new System.Drawing.Point(-1, 260);
             this.武器统计.Name = "武器统计";
             this.武器统计.Size = new System.Drawing.Size(423, 122);
             this.武器统计.TabIndex = 4;
@@ -505,7 +525,7 @@
             this.武器描述.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.武器描述.Location = new System.Drawing.Point(-1, 173);
             this.武器描述.Name = "武器描述";
-            this.武器描述.Size = new System.Drawing.Size(423, 71);
+            this.武器描述.Size = new System.Drawing.Size(423, 80);
             this.武器描述.TabIndex = 3;
             // 
             // 武器名
@@ -532,7 +552,8 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.In_The_Name_Of_The_Tsar;
+            this.tabPage4.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabPage4.BackgroundImage")));
             this.tabPage4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.tabPage4.Controls.Add(this.splitContainer3);
             this.tabPage4.Location = new System.Drawing.Point(4, 26);
@@ -540,7 +561,6 @@
             this.tabPage4.Size = new System.Drawing.Size(617, 429);
             this.tabPage4.TabIndex = 6;
             this.tabPage4.Text = "载具";
-            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // splitContainer3
             // 
@@ -551,6 +571,7 @@
             // splitContainer3.Panel1
             // 
             this.splitContainer3.Panel1.Controls.Add(this.treeView3);
+            this.splitContainer3.Panel1.Controls.Add(this.textBox2);
             // 
             // splitContainer3.Panel2
             // 
@@ -569,16 +590,17 @@
             this.treeView3.BackColor = System.Drawing.Color.White;
             this.treeView3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.treeView3.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.treeView3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.treeView3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.treeView3.ForeColor = System.Drawing.Color.Black;
             this.treeView3.HideSelection = false;
-            this.treeView3.Location = new System.Drawing.Point(0, 0);
+            this.treeView3.Location = new System.Drawing.Point(0, 23);
             this.treeView3.Name = "treeView3";
             this.treeView3.ShowNodeToolTips = true;
-            this.treeView3.Size = new System.Drawing.Size(185, 429);
+            this.treeView3.Size = new System.Drawing.Size(188, 406);
             this.treeView3.TabIndex = 1;
             this.treeView3.TabStop = false;
             this.treeView3.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView3_AfterSelect);
+            this.treeView3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.treeView3_KeyUp);
             // 
             // loadingLabel4
             // 
@@ -597,7 +619,7 @@
             // 
             this.载具统计.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.载具统计.ForeColor = System.Drawing.Color.White;
-            this.载具统计.Location = new System.Drawing.Point(-1, 254);
+            this.载具统计.Location = new System.Drawing.Point(-1, 260);
             this.载具统计.Name = "载具统计";
             this.载具统计.Size = new System.Drawing.Size(423, 122);
             this.载具统计.TabIndex = 8;
@@ -610,7 +632,7 @@
             this.载具描述.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.载具描述.Location = new System.Drawing.Point(-1, 173);
             this.载具描述.Name = "载具描述";
-            this.载具描述.Size = new System.Drawing.Size(423, 71);
+            this.载具描述.Size = new System.Drawing.Size(423, 80);
             this.载具描述.TabIndex = 7;
             // 
             // 载具名
@@ -719,6 +741,21 @@
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox2.ForeColor = System.Drawing.Color.Gray;
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(188, 23);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "搜索列表...";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyUp);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -747,12 +784,14 @@
             this.splitContainer1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
+            this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.武器图片)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.splitContainer3.Panel1.ResumeLayout(false);
+            this.splitContainer3.Panel1.PerformLayout();
             this.splitContainer3.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
@@ -813,6 +852,8 @@
         private System.Windows.Forms.Label loadingLabel2;
         private System.Windows.Forms.Label loadingLabel3;
         private System.Windows.Forms.Label loadingLabel4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
