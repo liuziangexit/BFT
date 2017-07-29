@@ -1,0 +1,96 @@
+BOMBER
+轰炸机
+Gotha G.IV Bomber
+戈塔 G 轰炸机
+Caproni CA.5 Bomber
+卡普罗尼 CA.5 轰炸机
+HORSE
+战马
+Horse
+战马
+LAND VEHICLE
+地面载具
+M30 Scout
+M30 侦察车
+37/95 Scout
+37/95 侦察车
+KFT Scout
+KFT 侦察车
+MC 18J Sidecar
+MC 18J 附边摩托车
+MC 3.5HP Sidecar
+MC 3.5HP 附边摩托车
+RNAS Armored Car
+RNAS 装甲车
+Romfell Armored Car
+Romfell 装甲车
+EV4 Armored Car
+EV4 装甲车
+F.T. Armored Car
+F.T. 装甲车
+STATIONARY WEAPON
+固定式武器
+FK 96 Field Gun
+FK 96 野战炮
+Fortress Gun
+堡垒火炮
+QF 1 AA
+QF 1 防空炮
+Heavy Machine Gun
+重型机枪
+HE Auto-Cannon
+HE Auto-Cannon
+ARTILLERY TRUCK
+火炮装甲车
+Artillery Truck
+火炮装甲车
+BEHEMOTH
+巨兽
+Airship L30
+L30 飞艇
+Armored Train
+装甲列车
+Dreadnought
+无畏舰
+LANDSHIP
+巡航坦克
+Mark V Landship
+Mark V 巡航坦克
+LIGHT TANK
+轻型坦克
+FT-17 Light Tank
+FT-17 轻型坦克
+BOAT
+船
+M.A.S. Torpedo Boat
+M.A.S. 鱼雷快艇
+ATTACK PLANE
+攻击机
+Halberstadt CL. II Attack Plane
+哈里伯施塔特 CL. II 攻击机
+Bristol F2.B Attack Plane
+布里斯托 F2.B 攻击机
+A.E.F 2-A2 Attack Plane
+A.E.F 2-A2  攻击机
+Rumpler C.I Attack Plane
+Rumpler C.I 攻击机
+FIGHTER
+战斗机
+SPAD S XIII Fighter
+SPAD S XIII 战斗机
+Sopwith Camel Fighter
+索普威斯骆驼式战斗机
+DR.1 Fighter
+DR.1 战斗机
+Albatros DIII  Fighter
+信天翁 DIII  战斗机
+HEAVY TANK
+重型坦克
+A7V Heavy Tank
+A7V 重型坦克
+St Chamond
+圣沙蒙 突击坦克
+HE Auto-Cannon
+高爆机炮
+BL 9.2 Siege Gun
+BL 9.2 攻城炮

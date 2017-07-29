@@ -1,0 +1,3 @@
+start Update.bat
+
+exit
