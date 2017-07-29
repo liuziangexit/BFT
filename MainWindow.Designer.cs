@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            System.Windows.Forms.TreeNode treeNode57 = new System.Windows.Forms.TreeNode("多人模式");
-            System.Windows.Forms.TreeNode treeNode58 = new System.Windows.Forms.TreeNode("一般");
-            System.Windows.Forms.TreeNode treeNode59 = new System.Windows.Forms.TreeNode("兵种");
-            System.Windows.Forms.TreeNode treeNode60 = new System.Windows.Forms.TreeNode("载具击杀数");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("多人模式");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("一般");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("兵种");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("载具击杀数");
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.loadingLabel = new System.Windows.Forms.Label();
@@ -70,6 +70,7 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.treeView3 = new System.Windows.Forms.TreeView();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.loadingLabel4 = new System.Windows.Forms.Label();
             this.载具统计 = new System.Windows.Forms.Label();
             this.载具描述 = new System.Windows.Forms.Label();
@@ -82,7 +83,6 @@
             this.软件更新ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.帮助ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.关于ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.MainTabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DogtagbackPic)).BeginInit();
@@ -383,22 +383,22 @@
             this.treeView1.HideSelection = false;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode57.Name = "多人模式节点";
-            treeNode57.Text = "多人模式";
-            treeNode57.ToolTipText = "多人模式分数统计。";
-            treeNode58.Name = "一般节点";
-            treeNode58.Text = "一般";
-            treeNode59.Name = "兵种节点";
-            treeNode59.Text = "兵种";
-            treeNode59.ToolTipText = "兵种分数和击杀数统计。";
-            treeNode60.Name = "载具击杀数节点";
-            treeNode60.Text = "载具击杀数";
-            treeNode60.ToolTipText = "载具击杀数统计。";
+            treeNode1.Name = "多人模式节点";
+            treeNode1.Text = "多人模式";
+            treeNode1.ToolTipText = "多人模式分数统计。";
+            treeNode2.Name = "一般节点";
+            treeNode2.Text = "一般";
+            treeNode3.Name = "兵种节点";
+            treeNode3.Text = "兵种";
+            treeNode3.ToolTipText = "兵种分数和击杀数统计。";
+            treeNode4.Name = "载具击杀数节点";
+            treeNode4.Text = "载具击杀数";
+            treeNode4.ToolTipText = "载具击杀数统计。";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode57,
-            treeNode58,
-            treeNode59,
-            treeNode60});
+            treeNode1,
+            treeNode2,
+            treeNode3,
+            treeNode4});
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(185, 429);
             this.treeView1.TabIndex = 0;
@@ -602,6 +602,21 @@
             this.treeView3.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView3_AfterSelect);
             this.treeView3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.treeView3_KeyUp);
             // 
+            // textBox2
+            // 
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.textBox2.ForeColor = System.Drawing.Color.Gray;
+            this.textBox2.Location = new System.Drawing.Point(0, 0);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(188, 23);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "搜索列表...";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyUp);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
+            // 
             // loadingLabel4
             // 
             this.loadingLabel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -740,21 +755,6 @@
             this.关于ToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.关于ToolStripMenuItem.Text = "关于";
             this.关于ToolStripMenuItem.Click += new System.EventHandler(this.关于ToolStripMenuItem_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.textBox2.ForeColor = System.Drawing.Color.Gray;
-            this.textBox2.Location = new System.Drawing.Point(0, 0);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 23);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "搜索列表...";
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
-            this.textBox2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox2_KeyUp);
-            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // MainWindow
             // 

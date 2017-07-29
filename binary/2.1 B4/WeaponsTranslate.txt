@@ -1,0 +1,384 @@
+MELEE
+近战武器
+Shovel
+军铲
+Trench Mace
+战壕槌
+Club
+棍棒
+Compact Trench Knife
+小型战壕刀
+Trench Knife
+战壕刀
+Sawtooth Knife
+锯齿刀
+Hellfighter Bolo Knife
+地狱战士双刃短刀
+US Trench Knife
+美军战壕刀
+Bedouin Dagger
+贝都因匕首
+Jambiya Knife
+双刃弯刀
+Spiked Club
+狼牙棒
+Bayonet Charge
+刺刀冲锋
+Hatchet
+手斧
+Bartek Bludgeon
+鲍尔泰克巨木棒
+Cavalry Sword
+骑兵军刀
+Combat Knife
+野战刀
+Survival Knife
+求生小刀
+Pickaxe
+鹤嘴锄
+SMG
+冲锋枪
+MP 18 Trench
+MP 18 壕沟战
+MP 18 Experimental
+MP 18 实验
+Automatico M1918 Factory
+M1918 自动冲锋枪 原厂
+MP 18 Optical
+MP 18 瞄准镜
+Automatico M1918 Storm
+M1918 自动冲锋枪 冲锋
+Automatico M1918 Trench
+M1918 自动冲锋枪 壕沟战
+Hellriegel 1915 Factory
+Hellriegel 1915 原厂
+GRENADE
+手榴弹
+Incendiary Grenade
+燃烧手榴弹
+Rifle Grenade — FRG
+步枪手榴弹 破片
+Impact Grenade
+冲击手榴弹
+Frag Grenade
+破片手榴弹
+Rifle Grenade — SMK
+步枪手榴弹 烟雾
+Mini Grenade
+小型手榴弹
+Smoke Grenade
+烟雾手榴弹
+Gas Grenade
+毒气手榴弹
+Light Anti-Tank Grenade
+轻型反坦克手榴弹
+Rifle Grenade — HE
+步枪手榴弹 高爆
+SELF-LOADING RIFLE
+半自动步枪
+Mondragón Storm
+蒙德拉贡步枪 冲锋
+Mondragón Optical
+蒙德拉贡步枪 瞄准镜
+Cei-Rigotti Factory
+Cei-Rigotti 原厂
+M1907 SL Sweeper
+M1907 SL 扫荡
+Autoloading 8 .25 Extended
+自动装填步枪 8.25 加长
+Selbstlader 1906 Factory
+Selbstlader 1906 原厂
+M1907 SL Trench
+M1907 SL 壕沟战
+Selbstlader M1916 Factory
+Selbstlader M1916 原厂
+Selbstlader M1916 Optical
+Selbstlader M1916 瞄准镜
+Mondragón Sniper
+蒙德拉贡步枪 狙击手 
+Cei-Rigotti Optical
+Cei-Rigotti 瞄准镜
+Cei-Rigotti Trench
+Cei-Rigotti 壕沟战
+Selbstlader M1916 Marksman
+Selbstlader M1916 神射手
+M1907 SL Factory
+M1907 SL 原厂
+Autoloading 8 .35 Factory
+自动装填步枪 8.35 原厂
+Autoloading 8 .35 Marksman
+自动装填步枪 8.35 神射手
+FIELD KIT
+战场装备
+Wex
+火焰喷射器
+MG 08/15
+MG 08/15
+Tankgewehr M1918
+Tankgewehr M1918
+Villar Perosa
+维拉-佩罗萨冲锋枪
+STANDARD ISSUE RIFLES
+制式步枪
+Russian 1895
+Russian 1895
+Gewehr M.95
+Gewehr M.95
+M1903
+M1903
+Gewehr 98
+Gewehr 98
+SMLE MKIII
+李-恩菲尔德
+Martini-Henry
+马提尼-亨利
+SHOTGUN
+霰弹枪
+Hellfighter Trench Shotgun
+地狱战士战壕霰弹枪
+12g Automatic Hunter
+12g 自动霰弹枪 猎人
+Model 10-A Factory
+Model 10-A 原厂
+Model 10-A Hunter
+Model 10-A 猎人
+12g Automatic Backbored
+12g 自动霰弹枪 Back-Bored
+M97 Trench Gun Hunter
+M97 战壕枪 猎人
+M97 Trench Gun Backbored
+M97 战壕枪 Back-Bored
+Model 10-A Slug
+Model 10-A 霰弹块
+12g Automatic Extended
+12g Automatic 加长
+M97 Trench Gun Sweeper
+M97 战壕枪 扫荡
+RIFLE
+步枪
+M1903 Marksman
+M1903 神射手
+Russian 1895 Sniper
+Russian 1895 狙击手
+Lawrence of Arabia's SMLE
+阿拉伯的劳伦斯的李-恩菲尔德步枪
+Gewehr 98 Marksman
+Gewehr 98 神射手
+Gewehr M.95 Infantry
+Gewehr M.95 步兵
+SMLE MKIII Marksman
+李-恩菲尔德步枪 神射手
+Martini-Henry Infantry
+马提尼-亨利步枪 步兵
+SMLE MKIII Infantry
+李-恩菲尔德步枪 步兵
+Gewehr 98 Infantry
+Gewehr 98 步兵
+Gewehr M.95 Carbine
+Gewehr M.95 卡宾
+Gewehr M.95 Marksman
+Gewehr M.95 神射手
+Russian 1895 Trench
+Russian 1895 壕沟战
+Russian 1895 Infantry
+Russian 1895 原厂
+M1903 Sniper
+M1903 狙击手
+M1903 Experimental
+M1903 实验
+SMLE MKIII Carbine
+李-恩菲尔德步枪 卡宾
+Gewehr 98 Sniper
+Gewehr 98 狙击手
+SIDEARM
+配枪
+Mars Automatic
+Mars 自动手枪
+Auto Revolver
+自动左轮手枪
+Red Baron's P08
+红男爵的 P08
+C96
+C96
+C93
+C93
+Bodeo 1889
+Bodeo 1889
+Bull Dog Revolver
+斗牛犬左轮手枪
+Repetierpistole M1912
+Repetierpistole M1912
+1903 Hammerless
+1903 Hammerless
+Hellfighter M1911
+地狱战士 M1911
+Modello 1915
+Modello 1915
+Gasser M1870
+加塞 M1870
+Frommer Stop
+费罗梅尔停止手枪
+No. 3 Revolver
+三号左轮手枪
+Howdah Pistol
+Howdah 手枪
+M1911
+M1911
+Kolibri
+Kolibri
+Mle 1903
+Mle 1903
+P08 Pistol
+P08 手枪
+Taschenpistole M1914
+Taschenpistole M1914
+GADGET
+配备
+Mortar — HE
+迫击炮 高爆
+Bandage Pouch
+医疗包
+Crossbow Launcher — HE
+十字弓发射器 高爆
+Trench Periscope
+战壕潜望镜
+Tripwire Bomb — GAS
+绊索炸弹 毒气
+K Bullets
+K 弹
+Bandage Pouch
+医疗包
+Anti-Tank Grenade
+反坦克手榴弹
+Flare Gun — Flash
+信号枪 闪光
+Anti-Tank Mine
+反坦克地雷
+Medical Syringe
+医疗用针筒
+Tripwire Bomb — HE
+绊索炸弹 高爆
+Tripwire Bomb — INC
+绊索炸弹 燃烧
+Flare Gun — Spot
+信号枪 侦察
+Crossbow Launcher — FRG
+十字弓发射器 破片
+Ammo Pouch
+弹药包
+Sniper Decoy
+狙击手诱饵
+Medical Crate
+医疗箱
+Trench Periscope
+战壕潜望镜
+Sniper Shield
+狙击手护盾
+Ammo Pouch
+弹药包
+Ammo Crate
+弹药箱
+AT Rocket Gun
+反坦克火箭炮
+Mortar — AIR
+迫击炮 空爆
+Dynamite
+炸药
+Limpet Charge
+吸附性地雷
+Repair Tool
+维修工具
+LMG
+轻机枪
+Madsen MG Trench
+麦德森机枪 壕沟战
+M1909 Benét–Mercié Storm
+M1909 贝内特-梅西耶机枪 冲锋
+Huot Automatic Low Weight
+Huot 自动步枪 轻量化
+Lewis Gun Low Weight
+刘易斯机枪 轻量化
+M1909 Benét–Mercié Telescopic
+M1909 贝内特-梅西耶机枪 望远瞄具
+BAR M1918 Telescopic
+M1918 勃朗宁自动步枪 望远瞄具
+BAR M1918 Storm
+M1918 勃朗宁自动步枪 冲锋
+Lewis Gun Suppressive
+刘易斯机枪 压制
+Madsen MG Storm
+麦德森机枪 冲锋
+Madsen MG Low Weight
+麦德森机枪 轻量化
+BAR M1918 Trench
+M1918 勃朗宁自动步枪 壕沟战
+Lewis Gun Optical
+刘易斯机枪 瞄准镜
+MG15 n.A. Suppressive
+MG15 n.A. 压制
+MG15 n.A. Storm
+MG15 n.A. 冲锋
+M1909 Benét–Mercié Optical
+M1909 贝内特-梅西耶机枪 瞄准镜
+MG15 n.A. Low Weight
+MG15 n.A. 轻量化
+TANKER/PILOT
+坦克手/飞行员
+Sawed Off Shotgun
+短管霰弹枪
+Pieper M1893
+皮珀 M1893
+C96 Carbine
+C96 卡宾
+Frommer Stop Auto
+费罗梅尔停止手枪 自动
+P08 Artillerie
+P08 Artillerie
+M1911 Extended
+M1911 加长
+Chauchat Telescopic
+绍沙轻机枪 望远瞄具
+Chauchat Low Weight
+绍沙轻机枪 轻量化
+Nail Knife
+铁钉小刀
+Saber
+军刀
+Trench Fleur
+战壕鸢尾刀
+Raider Club
+狼牙棒
+Billhook
+钩镰
+Cogwheel Club
+齿轮槌
+Kukri
+反曲刀
+Lebel Model 1886 Infantry
+勒贝尔 Model 1886 步兵
+Lebel Model 1886
+勒贝尔 Model 1886
+Lebel Model 1886 Sniper
+勒贝尔 Model 1886 狙击手
+RSC 1917 Factory
+RSC 1917 原厂
+RSC 1917 Optical
+RSC 1917 瞄准镜
+Mle 1903 Extended
+Mle 1903 加长
+Ribeyrolles 1918 Factory
+利贝罗勒 1918 原厂
+Doughboy M1911
+步兵小子 M1911
+Howdah Pistol Sweeper
+Howdah 手枪 扫荡
+Barbed Wire Bat
+铁丝木棒
+Huot Automatic Optical
+Hout 自动步枪 瞄准镜
+Martini-Henry Sniper
+马提尼-亨利 狙击手
+Selbstlader 1906 Sniper
+Selbstlader 1906 狙击手
+Hellriegel 1915 Defensive
+Hellriegel 1915 防御

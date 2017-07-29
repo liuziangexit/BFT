@@ -513,8 +513,13 @@ namespace 战绩追踪_C_Sharp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            if (textBox1.Text == "搜索列表...")
+                return;
+
             if (textBox1.Text == "")
                 textBox1_nosearch();
+            else
+                textBox1_dosearch(textBox1.Text);
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
@@ -574,8 +579,13 @@ namespace 战绩追踪_C_Sharp
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
+            if (textBox2.Text == "搜索列表...")
+                return;
+
             if (textBox2.Text == "")
                 textBox2_nosearch();
+            else
+                textBox2_dosearch(textBox2.Text);
         }
 
         private void textBox2_Enter(object sender, EventArgs e)

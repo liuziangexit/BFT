@@ -78,7 +78,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 23);
             this.label1.TabIndex = 33;
-            this.label1.Text = "2.1 Beta 3";
+            this.label1.Text = "2.1 Beta 4";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
@@ -112,7 +112,7 @@
             this.textBox1.TabIndex = 35;
             this.textBox1.TabStop = false;
             this.textBox1.Text = "\r\nBased on liuzianglib 2.4.2\r\n\r\nPowered by\r\nliuziangexit.com\r\nbattlefieldtracker." +
-    "com\r\nMicrosoft CPP REST SDK\r\nMicrosoft .NET Framework\r\n\r\n\r\n2017.7.29";
+    "com\r\nMicrosoft CPP REST SDK\r\nMicrosoft .NET Framework\r\n\r\n\r\n2017.7.30";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.Enter += new System.EventHandler(this.textBox1_Enter);
             // 
