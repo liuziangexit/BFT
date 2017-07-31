@@ -494,6 +494,12 @@ namespace 战绩追踪_C_Sharp
             isMouseDown = true;
         }
 
+        private void menuStrip1_MouseLeave(object sender, EventArgs e)
+        {
+            if (this.isMouseDown)
+                isMouseDown = false;
+        }
+
         private void topPanel_MouseMove(object sender, MouseEventArgs e)
         {
             if (!isMouseDown) return;

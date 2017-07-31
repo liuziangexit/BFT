@@ -39,6 +39,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -78,7 +79,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(361, 23);
             this.label1.TabIndex = 33;
-            this.label1.Text = "2.1 Beta 4";
+            this.label1.Text = "2.1 Beta 5";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button3
@@ -87,7 +88,7 @@
             this.button3.AutoSize = true;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button3.Location = new System.Drawing.Point(143, 416);
+            this.button3.Location = new System.Drawing.Point(100, 417);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 27);
             this.button3.TabIndex = 34;
@@ -121,12 +122,12 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.label2.Location = new System.Drawing.Point(0, 456);
+            this.label2.Location = new System.Drawing.Point(0, 455);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(361, 23);
             this.label2.TabIndex = 36;
             this.label2.Text = "由 liuziangexit 开发";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
@@ -134,7 +135,7 @@
             this.button1.AutoSize = true;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button1.Location = new System.Drawing.Point(62, 416);
+            this.button1.Location = new System.Drawing.Point(19, 417);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 27);
             this.button1.TabIndex = 37;
@@ -148,7 +149,7 @@
             this.button2.AutoSize = true;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
-            this.button2.Location = new System.Drawing.Point(224, 416);
+            this.button2.Location = new System.Drawing.Point(181, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(78, 27);
             this.button2.TabIndex = 38;
@@ -179,11 +180,26 @@
             this.panel1.Size = new System.Drawing.Size(361, 17);
             this.panel1.TabIndex = 40;
             // 
+            // button4
+            // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button4.AutoSize = true;
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(75)))), ((int)(((byte)(75)))));
+            this.button4.Location = new System.Drawing.Point(265, 417);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(78, 27);
+            this.button4.TabIndex = 41;
+            this.button4.TabStop = false;
+            this.button4.Text = "反馈意见";
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // About
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 479);
+            this.ClientSize = new System.Drawing.Size(361, 478);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
@@ -221,5 +237,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button4;
     }
 }

@@ -35,7 +35,7 @@ namespace 战绩追踪_C_Sharp
         {
             try
             {
-                System.Diagnostics.Process.Start("https://github.com/liuziangexit/BFT-CPP-Native-DLL");
+                System.Diagnostics.Process.Start("https://github.com/liuziangexit/BFT");
             }
             catch (Exception) { }
         }
@@ -56,6 +56,16 @@ namespace 战绩追踪_C_Sharp
                 System.Diagnostics.Process.Start("https://liuziangexit.com");
             }
             catch (Exception) { }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText("liuziang@liuziangexit.com");
+            var box = new Message();
+            box.SetButtonText("好");
+            box.SetMessage("开发者邮箱地址已经复制到剪贴板。");
+            box.SetTitle(" ");
+            box.ShowDialog();
         }
     }
 }
