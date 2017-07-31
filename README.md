@@ -1,3 +1,4 @@
-# BFT
+# 战绩追踪
 https://liuziangexit.com/BFT<br>
-本项目生成的二进制文件需要 https://github.com/liuziangexit/BFT-CPP-Native-DLL 生成的 DLL 动态库才能正常运行。
+此应用程序可以通过 EA Battlefield API 查询 Battlefield 1 所有玩家的统计资料。
+运行本项目生成的二进制文件需要 BFT-CPP-DLL(https://github.com/liuziangexit/BFT-CPP-Native-DLL)。
