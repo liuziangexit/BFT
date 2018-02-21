@@ -53,7 +53,9 @@
     <ApplicationIcon>BFT_ICO%402x.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -157,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BFT_ICO%402x.ico" />
+    <None Include="Resources\APOCALYPSE-GLASS.jpg" />
     <None Include="Resources\标题栏渐变.png" />
     <None Include="Resources\MinimizeWhite.png" />
     <None Include="Resources\Minimize.png" />

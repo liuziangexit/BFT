@@ -342,7 +342,8 @@ namespace 战绩追踪_C_Sharp
 
         private void QueryBS()
         {
-            RefreshPage1(BFT.GetBasicStats(inputID));
+            tabPage1.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.APOCALYPSE_GLASS;
+            RefreshPage1(BFT.GetBasicStats(inputID));            
             Page1finishFlag--;
             if (Page1finishFlag <= 0) { loadingLabel.Visible = false; Page1finishFlag = 0; }
         }
@@ -356,6 +357,7 @@ namespace 战绩追踪_C_Sharp
 
         private void QueryDS()
         {
+            tabPage2.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.APOCALYPSE_GLASS;
             loadingLabel2.Visible = true;
             DSresult = BFT.GetDetailedStats(inputID);
             RefreshPage2(DSresult, KSresult);
@@ -373,6 +375,7 @@ namespace 战绩追踪_C_Sharp
 
         private void QueryWS()
         {
+            tabPage3.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.APOCALYPSE_GLASS;
             loadingLabel3.Visible = true;
             WSresult = BFT.GetWeaponsStats(inputID);
             treeView2.Nodes.Clear();
@@ -385,6 +388,7 @@ namespace 战绩追踪_C_Sharp
 
         private void QueryVS()
         {
+            tabPage4.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.APOCALYPSE_GLASS;
             loadingLabel4.Visible = true;
             VSresult = BFT.GetVehiclesStats(inputID);
             treeView3.Nodes.Clear();

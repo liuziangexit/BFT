@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("多人模式");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("一般");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("兵种");
-            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("载具击杀数");
+            System.Windows.Forms.TreeNode treeNode5 = new System.Windows.Forms.TreeNode("多人模式");
+            System.Windows.Forms.TreeNode treeNode6 = new System.Windows.Forms.TreeNode("一般");
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("兵种");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("载具击杀数");
             this.MainTabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.loadingLabel = new System.Windows.Forms.Label();
@@ -383,22 +383,22 @@
             this.treeView1.HideSelection = false;
             this.treeView1.Location = new System.Drawing.Point(0, 0);
             this.treeView1.Name = "treeView1";
-            treeNode1.Name = "多人模式节点";
-            treeNode1.Text = "多人模式";
-            treeNode1.ToolTipText = "多人模式分数统计。";
-            treeNode2.Name = "一般节点";
-            treeNode2.Text = "一般";
-            treeNode3.Name = "兵种节点";
-            treeNode3.Text = "兵种";
-            treeNode3.ToolTipText = "兵种分数和击杀数统计。";
-            treeNode4.Name = "载具击杀数节点";
-            treeNode4.Text = "载具击杀数";
-            treeNode4.ToolTipText = "载具击杀数统计。";
+            treeNode5.Name = "多人模式节点";
+            treeNode5.Text = "多人模式";
+            treeNode5.ToolTipText = "多人模式分数统计。";
+            treeNode6.Name = "一般节点";
+            treeNode6.Text = "一般";
+            treeNode7.Name = "兵种节点";
+            treeNode7.Text = "兵种";
+            treeNode7.ToolTipText = "兵种分数和击杀数统计。";
+            treeNode8.Name = "载具击杀数节点";
+            treeNode8.Text = "载具击杀数";
+            treeNode8.ToolTipText = "载具击杀数统计。";
             this.treeView1.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3,
-            treeNode4});
+            treeNode5,
+            treeNode6,
+            treeNode7,
+            treeNode8});
             this.treeView1.ShowNodeToolTips = true;
             this.treeView1.Size = new System.Drawing.Size(185, 429);
             this.treeView1.TabIndex = 0;

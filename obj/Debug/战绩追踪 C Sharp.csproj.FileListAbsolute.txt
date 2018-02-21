@@ -1,0 +1,22 @@
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪 C Sharp.csprojResolveAssemblyReference.cache
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.About.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.MainWindow.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.Message.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.ShowText.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.TitleBarNoMax.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪_C_Sharp.TitleBarOnlyClose.resources
+C:\Users\liuzi\Documents\GitHub\BFT\obj\Debug\战绩追踪 C Sharp.csproj.GenerateResource.Cache
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\bin\Debug\BFT.exe.config
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\bin\Debug\BFT.exe
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\bin\Debug\BFT.pdb
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪 C Sharp.csprojResolveAssemblyReference.cache
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.About.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.MainWindow.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.Message.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.Properties.Resources.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.ShowText.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.TitleBarNoMax.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪_C_Sharp.TitleBarOnlyClose.resources
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\战绩追踪 C Sharp.csproj.GenerateResource.Cache
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\BFT.exe
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Debug\BFT.pdb

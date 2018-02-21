@@ -126,12 +126,12 @@ namespace 战绩追踪_C_Sharp
 
         public static string[] GetWeaponsStats(string ID)
         {
-            return GetStats(ID, "Weapons", Wfilename, 1500, 100000);
+            return GetStats(ID, "Weapons", Wfilename, 2000, 100000);
         }
 
         public static string[] GetVehiclesStats(string ID)
         {
-            return GetStats(ID, "Vehicles", Vfilename, 372, 10000);
+            return GetStats(ID, "Vehicles", Vfilename, 372, 15000);
         }
 
         public static string[] GetKitRanks(string ID)
