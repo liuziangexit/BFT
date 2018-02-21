@@ -28,6 +28,7 @@ namespace 战绩追踪_C_Sharp
         private void button1_MouseLeave(object sender, EventArgs e)
         {
             button1.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.Close;
+            FocusLabel.Focus();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -44,6 +45,7 @@ namespace 战绩追踪_C_Sharp
         private void button3_MouseLeave(object sender, EventArgs e)
         {
             button3.BackgroundImage = global::战绩追踪_C_Sharp.Properties.Resources.Minimize;
+            FocusLabel.Focus();
         }
 
         private void button3_Click(object sender, EventArgs e)

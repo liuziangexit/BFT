@@ -22,3 +22,4 @@ E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\bin\Release\BFT.exe
 E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\bin\Release\BFT.pdb
 E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Release\BFT.exe
 E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Release\BFT.pdb
+E:\OneDrive\Dev\Projects\战绩追踪 C Sharp\obj\Release\战绩追踪 C Sharp.csprojResolveAssemblyReference.cache
